@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-background: #202632;
+  --clr-accent: #53ffab;
+  --clr-text: #cbe2e8;
+  --clr-background-2: #313a49;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: var(--clr-background-2);
+  padding: 4rem;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.advice-no {
+  color: var(--clr-accent);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.advice {
+  width: 35ch;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.divider {
+  width: 75%;
+  height: 5rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.divider-line {
+  height: 1px;
+  width: 100%;
+  background-color: #cbe2e8;
+  opacity: 0.1;
+  position: absolute;
+  top: 50%;
+}
+
+.divider-icon {
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--clr-background-2);
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+}
+
+.dice-icon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+  position: absolute;
+  left: 50%;
+  bottom: -7rem;
+  transform: translate(-50%, -50%);
+  color: var(--clr-background);
+  font-size: 4rem;
+  display: grid;
+  place-items: center;
+}
