@@ -12,7 +12,7 @@ async function getData() {
 }
 
 const adviceNo = document.querySelector("#advice-no");
-const advice = document.querySelector("#advice");
+const advice = document.querySelector("#advice > h1");
 
 getData().then((data) => {
   adviceNo.textContent = "advice #" + data["slip"]["id"];

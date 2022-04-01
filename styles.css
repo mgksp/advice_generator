@@ -19,7 +19,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Manrope", sans-serif;
   background-color: var(--clr-background);
   color: var(--clr-text);
 }
@@ -52,7 +52,7 @@ body {
   letter-spacing: 2.5px;
 }
 
-.advice {
+.advice > h1 {
   width: 35ch;
   font-size: 3.6rem;
   text-align: center;
