@@ -13,8 +13,14 @@ async function getData() {
 
 const adviceNo = document.querySelector("#advice-no");
 const advice = document.querySelector("#advice > h1");
+const askAdviceBtn = document.getElementById("dice-icon");
 
-getData().then((data) => {
+async function giveAdvice() {
+  const data = await getData();
   adviceNo.textContent = "advice #" + data["slip"]["id"];
   advice.textContent = `"${data["slip"]["advice"]}"`;
-});
+}
+
+askAdviceBtn.addEventListener("click", giveAdvice);
+
+giveAdvice();
