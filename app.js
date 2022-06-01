@@ -21,6 +21,6 @@ async function giveAdvice() {
   advice.textContent = `"${data["slip"]["advice"]}"`;
 }
 
-askAdviceBtn.addEventListener("click", giveAdvice);
-
 giveAdvice();
+
+askAdviceBtn.addEventListener("click", giveAdvice);

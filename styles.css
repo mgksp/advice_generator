@@ -18,14 +18,18 @@ html {
 }
 
 body {
+  min-height: 100vh;
   font-size: 1.6rem;
   font-family: "Manrope", sans-serif;
   background-color: var(--clr-background);
   color: var(--clr-text);
+  padding-inline: 2.4rem;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  place-items: center;
 }
 
 .container {
-  min-height: 100vh;
   display: grid;
   place-items: center;
 }
@@ -53,7 +57,7 @@ body {
 }
 
 .advice > h1 {
-  width: 35ch;
+  max-width: 35ch;
   font-size: 3.6rem;
   text-align: center;
 }
@@ -102,9 +106,24 @@ body {
   place-items: center;
   cursor: pointer;
   transition: box-shadow 150ms ease-in-out;
+  border: none;
+  outline: none;
 }
 .dice-icon:hover {
   box-shadow: 0px 0px 28px 0 var(--clr-accent);
+}
+
+.attribution {
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+  padding: 0.25rem;
+}
+.attribution a {
+  color: var(--clr-accent);
+  font-size: 1.4rem;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
