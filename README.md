@@ -2,7 +2,7 @@
 
 ### Links
 
-[Challenge from FrontendMentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db)
+[Challenge from FrontendMentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db)\
 [Live site here](https://mgksp.github.io/advice_generator/)
 
 ### Built with
